@@ -5,5 +5,11 @@ import Title from "../components/Title"
 import Image from "gatsby-image"
 import SEO from "../components/SEO"
 const About = () => {
-  return <Layout></Layout>
+  return (
+    <Layout>
+      <h1> About page</h1>
+    </Layout>
+  )
 }
+
+export default About
