@@ -4,7 +4,6 @@ import Layout from "../components/Layout"
 import Services from "../components/Services"
 import Products from "../components/Products"
 
-import SEO from "../components/SEO"
 export default ({ data }) => {
   const {
     allContentfulProducts: { edges: products },
