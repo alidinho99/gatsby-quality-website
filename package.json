@@ -12,6 +12,8 @@
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sharp": "^2.6.42",
     "gatsby-plugin-snipcart": "^1.1.2",
+    "gatsby-plugin-snipcart-advanced": "^1.0.1",
+    "gatsby-plugin-snipcartv3": "^2.3.3",
     "gatsby-source-contentful": "^2.3.55",
     "gatsby-source-filesystem": "^2.3.35",
     "gatsby-transformer-sharp": "^2.5.18",

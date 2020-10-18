@@ -11,7 +11,6 @@ export const Products = ({ products, title }) => {
           return <Product key={product.node.id} {...product.node} />
         })}
       </div>
-      )
     </section>
   )
 }

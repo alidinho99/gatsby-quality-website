@@ -216,8 +216,6 @@ Navbar
   height: 5rem;
   display: flex;
   align-items: center;
-  z-index: 200;
-  background: var(--clr-white);
 }
 .nav-center {
   width: 90vw;
@@ -232,7 +230,8 @@ Navbar
 .nav-header img {
   margin-bottom: 0.375rem;
 }
-.toggle-btn {
+.toggle-btn,
+.cart {
   font-size: 2rem;
   background: transparent;
   border-color: transparent;

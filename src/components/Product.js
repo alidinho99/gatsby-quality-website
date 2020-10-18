@@ -22,6 +22,19 @@ const Product = ({
           <div className="blog-footer">
             <p>{category}</p>
             <p>KD {price}</p>
+            <button
+              className="btn snipcart-add-item"
+              data-item-id={id}
+              data-item-name={productName}
+              data-item-price={price}
+              data-item-image={productImage.fluid.src}
+              data-item-url="https://qualitykw.netlify.app"
+              data-item-custom1-name="Frame color"
+              data-item-custom1-options="Black|Brown[+100.00]|Gold[+300.00]"
+              data-item-max-quantity="3"
+            >
+              add to cart
+            </button>
           </div>
         </div>
       </article>

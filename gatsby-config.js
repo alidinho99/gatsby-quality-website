@@ -25,11 +25,31 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+
     {
-      resolve: "gatsby-plugin-snipcart",
+      resolve: `gatsby-plugin-snipcart-advanced`,
       options: {
-        apiKey: process.env.SNIPCART_APIKEY,
-        autopop: true,
+        version: "3.0.23",
+        publicApiKey: process.env.SNIPCART_APIKEY, // use public api key here or in environment variable
+        defaultLang: "ar",
+        currency: "KWD",
+        openCartOnAdd: true,
+        locales: {
+          fr: {
+            actions: {
+              checkout: "Valider le panier",
+            },
+          },
+          ar: {
+            actions: {
+              checkout: "استمرار",
+            },
+          },
+        },
+        innerHTML: `
+            <billing section="bottom">
+                <!-- Customization goes here -->
+            </billing>`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
